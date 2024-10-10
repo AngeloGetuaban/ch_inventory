@@ -15,6 +15,11 @@ const inventoryRoutes = require('../routes/inventory');
 // Set up routes
 app.use('/', inventoryRoutes);
 
+// Start server
+app.listen(3000, () => {
+    console.log('Server is running on port http://localhost:3000');
+});
+
 // Create the HTTP server for Vercel
 module.exports = (req, res) => {
     const server = createServer(app);
