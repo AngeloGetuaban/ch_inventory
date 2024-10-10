@@ -1,13 +1,10 @@
 {
   "name": "ch_inventory",
   "version": "1.0.0",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node server.js"
+    "start": "node api/server.js",
+    "vercel-build": "echo 'Vercel build script'"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",
     "ejs": "^3.1.6"
