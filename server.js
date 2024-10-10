@@ -9,7 +9,7 @@ app.set('public', './public');
 app.use(express.static('public'));
 
 // Import admin routes
-const inventoryRoutes = require('../routes/inventory');
+const inventoryRoutes = require('./routes/inventory');
 
 // Set up routes
 app.use('/', inventoryRoutes);
