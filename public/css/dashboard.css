@@ -1,0 +1,22 @@
+/* General container setup */
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 100vw;
+}
+h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+h1 {
+    font-size: 3.0em;
+    margin-top: 0;
+    margin-left: 20px;
+}
+/* Main content styles */
+.main{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+
+}

@@ -1,0 +1,23 @@
+<div class="profile-section">
+    <div class="profile-image-placeholder">
+        <img src="<%= profile.profile_pic %>" alt="Profile Image" class="profile-img">
+    </div>
+    <h2>Hello, <%= profile.first_name %> <%= profile.last_name %>!</h2>
+</div>
+<nav class="nav-links">
+    <ul>
+        <li><a href="/users">User Settings</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/inventories">Inventories</a></li>
+        <li><a href="/in-house-stocks">In House Stocks</a></li>
+        <li><a href="/product-stocks">Product Stocks</a></li>
+        <li><a href="/branches">Branches</a></li>
+    </ul>
+</nav>
+
+<!-- Logout button -->
+<div class="logout-section">
+    <form action="/logout" method="POST">
+        <button type="submit" class="logout-btn">Logout</button>
+    </form>
+</div>

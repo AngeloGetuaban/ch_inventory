@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiro Healot | Users</title>
+    <link rel="stylesheet" href="/css/users.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <%- include('nav', { profile: profile }) %>
+        </aside>
+
+        <main>
+            <h1>User Settings</h1>
+
+            <!-- Table to display users -->
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Role</th>
+                        <th>Branch</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="/js/users.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+</html>
